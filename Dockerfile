@@ -68,7 +68,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Download Tizen Studio installer
 # If you want to download a different version of Tizen Studio, you may specify it in the argument below:
-ARG T_VERSION=2.5
+ARG T_VERSION=3.7
 ARG T_BINARY=web-cli_Tizen_Studio_${T_VERSION}_ubuntu-64.bin
 RUN wget http://download.tizen.org/sdk/Installer/tizen-studio_${T_VERSION}/${T_BINARY} \
 	-O /home/${T_USER}/${T_BINARY} && \
